@@ -8,6 +8,10 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+	declare module 'svelte-icons/fa/*.svelte' {
+		import { SvelteComponentTyped } from 'svelte';
+		export default class extends SvelteComponentTyped<{}, {}, {}> {}
+	}
 }
 
 export {};
